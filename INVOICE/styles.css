@@ -1,0 +1,82 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 8px; /* Reduce font size */
+}
+.invoice-container {
+    max-width: 800px;
+    height: 148.5mm; /* Half the height of an A4 page */
+    margin: auto;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+.logo, .logo-bottom {
+    text-align: left;
+}
+.logo img, .logo-bottom img {
+    max-width: 250px;
+}
+.business-info {
+    flex: 1;
+    text-align: left;
+    padding-left: 5px;
+}
+.invoice-details {
+    text-align: right;
+}
+.invoice-info, .billing-info, .items, .total, .payment-terms, .notes {
+    margin-bottom: 5px;
+}
+.items table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.items table, .items th, .items td {
+    border: 1px solid black;
+}
+.items th, .items td {
+    padding: 2px;
+    text-align: left;
+}
+.total {
+    text-align: right;
+}
+.total hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 2px 0;
+}
+[contenteditable="true"] {
+    background-color: #f9f9f9;
+    padding: 1px;
+    border: 1px dashed #ccc;
+}
+button {
+    margin-top: 5px;
+    padding: 3px 5px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #555;
+}
+footer {
+    text-align: right;
+    margin-top: 5px;
+}
