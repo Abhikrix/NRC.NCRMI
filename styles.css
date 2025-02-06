@@ -27,7 +27,7 @@ header {
     text-align: left;
 }
 .logo img, .logo-bottom img {
-    max-width: 80px; /* Adjusted image size */
+    max-width: 120px; /* Adjusted image size */
 }
 .business-info {
     flex: 1;
