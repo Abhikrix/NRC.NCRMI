@@ -1,18 +1,17 @@
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 5px;
+    margin: 5mm;
     padding: 0;
     box-sizing: border-box;
-    font-size: 8px; /* Reduce font size */
+    font-size: 10px; /* Slightly reduced font size */
 }
 .invoice-container {
-    max-width: 800px;
-    height: 148.5mm; /* Half the height of an A4 page */
+    max-width: 190mm; /* Slightly reduced width */
     margin: auto;
-    padding: 5px;
+    padding: 15mm; /* Reduced padding */
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -21,24 +20,24 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 5px;
+    margin-bottom: 5mm; /* Reduced margin */
 }
 .logo, .logo-bottom {
     text-align: left;
 }
 .logo img, .logo-bottom img {
-    max-width: 250px;
+    max-width: 130px; /* Slightly reduced image size */
 }
 .business-info {
     flex: 1;
     text-align: left;
-    padding-left: 5px;
+    padding-left: 5mm; /* Reduced padding */
 }
 .invoice-details {
     text-align: right;
 }
 .invoice-info, .billing-info, .items, .total, .payment-terms, .notes {
-    margin-bottom: 5px;
+    margin-bottom: 5mm; /* Reduced margin */
 }
 .items table {
     width: 100%;
@@ -48,7 +47,7 @@ header {
     border: 1px solid black;
 }
 .items th, .items td {
-    padding: 2px;
+    padding: 3mm; /* Reduced padding */
     text-align: left;
 }
 .total {
@@ -57,16 +56,16 @@ header {
 .total hr {
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 2px 0;
+    margin: 2mm 0;
 }
 [contenteditable="true"] {
     background-color: #f9f9f9;
-    padding: 1px;
+    padding: 1mm;
     border: 1px dashed #ccc;
 }
 button {
-    margin-top: 5px;
-    padding: 3px 5px;
+    margin-top: 5mm;
+    padding: 3mm 5mm;
     background-color: #333;
     color: white;
     border: none;
@@ -78,5 +77,5 @@ button:hover {
 }
 footer {
     text-align: right;
-    margin-top: 5px;
+    margin-top: 5mm;
 }
