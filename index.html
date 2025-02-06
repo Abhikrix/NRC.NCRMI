@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Invoice</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="invoice-container">
+        <header>
+            <div class="logo">
+                <img src="file:///C:/Users/Pradeep/OneDrive/Desktop/INVOICE/logo/logo.png" alt="NRC Logo">
+            </div>
+            <div class="business-info">
+                <h1>Convener (NRC) of NCRMI</h1>
+                <p>Business Number: 9526793672</p>
+                <p>Kudappanakunnu, Near Dooradashan</p>
+                <p>Thiruvananthapuram, Kerala 695043</p>
+                <p>+91-471-2730777</p>
+                <p>nrcncrmi@gmail.com</p>
+            </div>
+            <div class="invoice-details">
+                <h2>INVOICE</h2>
+                <p><strong>Invoice Number:</strong> <span contenteditable="true">001</span></p>
+                <p><strong>Date of Issue:</strong> <span contenteditable="true">YYYY-MM-DD</span></p>
+                <p><strong>Due:</strong> <span contenteditable="true">YYYY-MM-DD</span></p>
+                <p><strong>Balance Due:</strong> <span id="balance" contenteditable="true">₹5,000.00</span></p>
+            </div>
+        </header>
+        <div class="billing-info">
+            <h3>Bill To:</h3>
+            <p contenteditable="true">Client's Name</p>
+            <p contenteditable="true">Client's Address</p>
+            <p contenteditable="true">Client's Phone</p>
+            <p contenteditable="true">Client's Email</p>
+        </div>
+        <div class="items">
+            <h3>Items</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="invoice-items">
+                    <tr>
+                        <td contenteditable="true">Service/Product 1</td>
+                        <td contenteditable="true">1</td>
+                        <td contenteditable="true">₹100.00</td>
+                        <td contenteditable="true">₹100.00</td>
+                    </tr>
+                </tbody>
+            </table>
+           
+        </div>
+        <div class="total">
+            <p><strong>SUBTOTAL:</strong> <span id="subtotal" contenteditable="true">₹100.00</span></p>
+            <hr>
+            <p><strong>TAXABLE:</strong> <span id="taxable" contenteditable="true">₹100.00</span></p>
+            <hr>
+            <p><strong>TAX:</strong> <span id="tax" contenteditable="true">₹10.00</span></p>
+            <hr>
+            <p><strong>TOTAL:</strong> <span id="total" contenteditable="true">₹110.00</span></p>
+            <hr>
+            <p><strong>BALANCE DUE:</strong> <span id="balance" contenteditable="true">₹110.00</span></p>
+        </div>
+        <div class="notes">
+            <h3>NRC</h3>
+            <p>RECREATION CLUB OF NCRMI</p>
+        </div>
+        <footer>
+            <div class="logo-bottom">
+                <img src="file:///C:/Users/Pradeep/OneDrive/Desktop/INVOICE/logo/logo.png" alt="NRC Logo">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
