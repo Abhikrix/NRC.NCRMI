@@ -3,12 +3,13 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 8px; /* Further reduced font size */
+    font-size: 9px; /* Slightly increased font size */
 }
 .invoice-container {
-    max-width: 180mm; /* Slightly reduced width */
+    max-width: 190mm; /* Adjusted width */
+    height: 220mm; /* 3/4 of A4 height */
     margin: auto;
-    padding: 8mm; /* Further reduced padding */
+    padding: 10mm; /* Adjusted padding */
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -20,24 +21,24 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 4mm; /* Further reduced margin */
+    margin-bottom: 5mm; /* Adjusted margin */
 }
 .logo, .logo-bottom {
     text-align: left;
 }
 .logo img, .logo-bottom img {
-    max-width: 70px; /* Further reduced image size */
+    max-width: 80px; /* Adjusted image size */
 }
 .business-info {
     flex: 1;
     text-align: left;
-    padding-left: 4mm; /* Further reduced padding */
+    padding-left: 5mm; /* Adjusted padding */
 }
 .invoice-details {
     text-align: right;
 }
 .invoice-info, .billing-info, .items, .total, .payment-terms, .notes {
-    margin-bottom: 4mm; /* Further reduced margin */
+    margin-bottom: 5mm; /* Adjusted margin */
 }
 .items table {
     width: 100%;
@@ -47,7 +48,7 @@ header {
     border: 1px solid black;
 }
 .items th, .items td {
-    padding: 2mm; /* Further reduced padding */
+    padding: 3mm; /* Adjusted padding */
     text-align: left;
 }
 .total {
@@ -64,7 +65,7 @@ header {
     border: 1px dashed #ccc;
 }
 button {
-    margin-top: 3mm;
+    margin-top: 5mm;
     padding: 3mm 5mm;
     background-color: #333;
     color: white;
@@ -77,5 +78,5 @@ button:hover {
 }
 footer {
     text-align: right;
-    margin-top: 4mm;
+    margin-top: 5mm;
 }
